@@ -1,47 +1,118 @@
-body{
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    background-color: rgb(255, 255, 255);
-    color: rgb(0, 248, 41);
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
     margin: 0;
     padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
-.container {
-    margin-top: 50px;
-    max-width: 800px;
+
+.contenedor-principal {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    flex: 1;
 }
-#Menu {
-    background-color: white;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgb(0, 0, 0, 0.1);
+
+/* Menú de navegación */
+.menu-navegacion {
+    background-color: rgb(0, 0, 0);
+    padding: 25px;
+    border-radius: 8px;
+    margin-bottom: 30px;
     text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border: 2px solid #0f0;
 }
-h1{
-    font-size: 2.5rem;
-    color: rgb(0, 206, 0);
-    margin-bottom: 20px;
+
+.titulo-principal {
+    color: rgb(0, 255, 21);
+    font-size: 2rem;
+    margin: 0 0 20px 0;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
 }
-.nav {
+
+.barra-navegacion {
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 12px;
 }
-.nav-pag{
-    width: 100%;
+
+.boton-nav {
+    display: inline-block;
+    width: 80%;
     max-width: 300px;
-    margin: 10px auto;
-    padding: 15px 20px;
-    font-size: 1.1 rem;
-    color: black;
+    padding: 12px 20px;
+    background-color: white;
+    color: #003366;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    border: 2px solid white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
-.imagen{
-   width: 100%;
-   max-width: 1550px;
-   height: auto;
-   max-height: 600px;
-   object-fit: cover;
-   border: 2px solid rgb(0, 248, 41);
-   box-shadow: 0 0 15px rgba(0, 248, 41, 0.5);
-   margin: 20px;
-   display: block;
+
+.boton-nav:hover {
+    background-color: #002244;
+    color: white;
+    transform: translateY(-2px);
+}
+
+.pagina-actual {
+    background-color: #ff6600; /* Naranja FIME */
+    color: white;
+    border-color: #ff6600;
+}
+
+/* Contenedor de imagen */
+.contenedor-imagen {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.imagen-fachada {
+    width: 100%;
+    height: auto;
+    max-height: 70vh;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.imagen-fachada:hover {
+    transform: scale(1.02);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .titulo-principal {
+        font-size: 1.5rem;
+    }
+    
+    .boton-nav {
+        width: 100%;
+        padding: 10px 15px;
+    }
+    
+    .contenedor-imagen {
+        border-radius: 0;
+    }
+    
+    .menu-navegacion {
+        border-radius: 0;
+        margin-bottom: 15px;
+    }
+    
+    .contenedor-principal {
+        padding: 0;
+    }
 }
