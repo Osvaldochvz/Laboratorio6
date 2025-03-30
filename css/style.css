@@ -1,0 +1,47 @@
+body{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 248, 41);
+    margin: 0;
+    padding: 0;
+}
+.container {
+    margin-top: 50px;
+    max-width: 800px;
+}
+#Menu {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgb(0, 0, 0, 0.1);
+    text-align: center;
+}
+h1{
+    font-size: 2.5rem;
+    color: rgb(0, 206, 0);
+    margin-bottom: 20px;
+}
+.nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.nav-pag{
+    width: 100%;
+    max-width: 300px;
+    margin: 10px auto;
+    padding: 15px 20px;
+    font-size: 1.1 rem;
+    color: black;
+}
+.imagen{
+   width: 100%;
+   max-width: 1550px;
+   height: auto;
+   max-height: 600px;
+   object-fit: cover;
+   border: 2px solid rgb(0, 248, 41);
+   box-shadow: 0 0 15px rgba(0, 248, 41, 0.5);
+   margin: 20px;
+   display: block;
+}
