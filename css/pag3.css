@@ -1,6 +1,7 @@
+/* pag3.css */
 body {
     font-family: Arial, sans-serif;
-    background-color: #000;
+    background-color: #000000;
     color: #0f0;
     margin: 0;
     padding: 20px;
@@ -13,8 +14,10 @@ body {
     margin: 0 auto;
     padding: 10px;
 }
+
+/* Encabezado y menú */
 #Menu {
-    background-color: #222;
+    background-color: #000000;
     padding: 20px;
     border-radius: 10px;
     margin-bottom: 20px;
@@ -85,14 +88,13 @@ body {
     margin: 20px 0;
 }
 
-.gallery-img {
+.img-gallery img {
     width: 100%;
     max-width: 300px;
     border: 2px solid #0f0;
     border-radius: 5px;
 }
 
-/* Alert */
 .alert {
     padding: 15px;
     border-radius: 5px;
@@ -105,39 +107,28 @@ body {
     border: 1px solid #0f0;
 }
 
-/* Secciones de influencers */
-.influencer-section {
-    margin-bottom: 40px;
-    padding-bottom: 30px;
-    border-bottom: 2px solid #0f0;
+.list-group {
+    margin: 15px 0;
 }
 
-.influencer-section:last-child {
-    border-bottom: none;
-    margin-bottom: 0;
-    padding-bottom: 0;
+.list-group-item {
+    padding: 10px 15px;
+    border: 1px solid #0f0;
+    margin-bottom: 8px;
+    background-color: #333;
+    color: white;
 }
 
-.influencer-info p {
-    margin-bottom: 15px;
-    line-height: 1.6;
+.card {
+    border: 2px solid #0f0;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    background-color: #333;
+    color: white;
+    overflow: hidden;
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-    h1 {
-        font-size: 24px;
-    }
-    
-    .page-content h2 {
-        font-size: 1.3rem;
-    }
-    
-    .gallery-img {
-        max-width: 100%;
-    }
-    
-    .nav-btn {
-        width: 100%;
-    }
+.card-img-top {
+    width: 100%;
+    height: auto;
 }
